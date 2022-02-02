@@ -38,7 +38,7 @@
     ");
 
     echo "Declarando variáveis";
-    $minhaVar = "Estou aprendendo PHP";
+    /* $minhaVar = "Estou aprendendo PHP";
     echo "<br><br>Variável do tipo string, $minhaVar <br>";
     
     //O var_dump() exibe o tipo de dado gurdado navariável
@@ -52,8 +52,30 @@
     $numero2 = "1";
     var_dump($numero2);
 
-    $teste = false;
+    $teste = false; */
 
+    echo "<br><br> Declarando variavel do tipo string <br><br>";
+    $minhaVar = 'Estude PHP';
+    var_dump($minhaVar);
+
+    echo "<br><br> Declarando variavel do tipo integer <br><br>";
+    $minhaVar2 = 100;
+    var_dump($minhaVar2);
+
+    //$minhaVar3 = '100';
+    //var_dump($minhaVar3)
+
+    echo "<br><br> Declarando variavel do tipo float <br><br>";
+    $minhaVar4 = 10.5;
+    var_dump($minhaVar4);
+
+    echo "<br><br> Declarando variavel do tipo boolean <br><br>";
+    $minhaVar5 = true;
+    var_dump($minhaVar5);
+
+    echo "<br><br> Declarando variavel do tipo array <br><br>";
+    $minhaVar6 = [10, 'pera', 'mamão'];
+    var_dump($minhaVar6);
 
 
 ?>
