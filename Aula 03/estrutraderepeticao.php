@@ -46,16 +46,6 @@
     }while($varControl <= 7);
 
     //Obs: a diferença entre while e do while é que no DO WHILE o bloco de comandos 
-    //é executado pelo menos uma vez. 
-
-
-
-
-
-
-
-
-
-
+    //é executado pelo menos uma vez.
 
 ?>
