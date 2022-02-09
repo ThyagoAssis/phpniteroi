@@ -1,0 +1,9 @@
+create database bd_aula5;
+use bd_aula5;
+
+create table tb_alunos(
+id_aluno int primary key auto_increment,
+nome varchar(55),
+cpf varchar(11),
+nasc date
+);

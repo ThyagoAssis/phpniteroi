@@ -2,6 +2,7 @@
    //Decalração de variáveis
    $nome = $_POST["nome"];
    $cpf = $_POST["cpf"];
+   $data = $_POST["data"];
 ?>
 
 
