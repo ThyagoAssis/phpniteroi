@@ -21,6 +21,4 @@
     //Executar
     $query->execute();
     echo "Será que funfou? :[";
-    
-
 ?>
