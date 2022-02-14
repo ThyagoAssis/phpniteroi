@@ -1,6 +1,6 @@
 <?php
-    //Conexão dom o BD
-    $conecta = new PDO("mysql:dbname=db_tuxbook;host=localhost", "root", "");
+    //Chama a conecxão co m o banco de dados
+    require_once("conexao.php");
     
     //Prepara a nossa query
     $query = $conecta->prepare("SELECT * FROM tb_livros");
@@ -33,7 +33,3 @@
 
         
     }
-
-
-
-?>
