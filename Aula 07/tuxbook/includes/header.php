@@ -20,7 +20,7 @@
       <div class="navbar-nav me-auto mb-2 mb-lg-0">
        
       </div>
-      <a href=""><button class="btn btn-dark">Cadastrar</button></a>
+      <a href=""><button class="btn btn-dark">Cadastrar</button></a>      
     </div>
   </div>
 </nav>

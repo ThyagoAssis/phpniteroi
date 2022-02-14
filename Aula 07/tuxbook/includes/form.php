@@ -6,11 +6,11 @@
             <form action="./app/scripts/cadastra.php" method="post">
                 <!--Início linha1 Formulario-->
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-2">
                         <input class="form-control" type="text" name="isbn" placeholder="Informe o ISBN">
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-6">
                         <input class="form-control"  type="text" name="titulo" placeholder="Informe o Título">
                     </div>
 
@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="col-3">
-                        <input class="form-control"  type="number" name="paginas" placholder="Pag" >
+                        <input class="form-control"  type="number" name="paginas" placholder="Paginas" >
                     </div>
                 </div>
                 <!--Fim linha2 Formulario-->
