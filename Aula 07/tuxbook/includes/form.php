@@ -22,15 +22,24 @@
 
                 <!--Ínicio linha2 Formulario-->
                 <div class="row mt-3">
-                    <div class="col-9">
+                <div class="col-4">
+                        <input class="form-control"  type="text" name="imagem" placeholder="http://imagem.imagem.com" >
+                    </div>
+                    <div class="col-4">
                         <input class="form-control"  type="text" name="editora" placeholder="Informe a Editora">
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-4">
                         <input class="form-control"  type="number" name="paginas" placholder="Paginas" >
                     </div>
                 </div>
                 <!--Fim linha2 Formulario-->
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <textarea class="form-control"  type="text" name="descricao" placeholder="Descrição"></textarea>
+                    </div>                    
+                </div>
 
                 <!--Inicio Botao-->
                 <div class="row mt-3">

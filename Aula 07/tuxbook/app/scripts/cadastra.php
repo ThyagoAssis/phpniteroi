@@ -4,7 +4,7 @@
 
     //Verifica se o form foi preenchido
     //A funçao isset verifica se uma variável ou array esta vazio
-    if(  $_POST["titulo"] && $_POST["isbn"] && $_POST["autor"] && $_POST["editora"]  ){
+    if(  $_POST["titulo"] && $_POST["isbn"] && $_POST["autor"] && $_POST["editora"] && $_POST["imagem"] && $_POST["descricao"]){
 
         //Variáveis
         $titulo = $_POST["titulo"];
@@ -12,9 +12,11 @@
         $autor = $_POST["autor"];
         $editora = $_POST["editora"];
         $paginas = $_POST["paginas"];
+        $imagem = $_POST["imagem"];
+        $descricao = $_POST["descricao"];
 
         //Montando  a query
-        $query = $conecta->prepare("INSERT INTO tb_livros(titulo, isbn, autor, editora, paginas) VALUES(:TITULO, :ISBN, :AUTOR, :EDITORA, :PAGINAS)");
+        $query = $conecta->prepare("INSERT INTO tb_livros(titulo, isbn, autor, editora, paginas, imagem, descricao) VALUES(:TITULO, :ISBN, :AUTOR, :EDITORA, :PAGINAS, :IMAGEM, :DESCRICAO)");
 
         //Associando as variáveis 
         /* 
@@ -30,9 +32,11 @@
             ':ISBN' => $isbn,
             ':AUTOR' => $autor,
             ':EDITORA' => $editora,
-            ':PAGINAS' => $paginas
+            ':PAGINAS' => $paginas,
+            ':IMAGEM' => $imagem,
+            ':DESCRICAO' => $descricao
         ));
-        echo "Será que cadastrou?";
+        header("Location: http://localhost/phpniteroi/Aula%2007/tuxbook/");
     }else {
         header("Location: http://localhost/phpniteroi/Aula%2007/tuxbook/");
     }
