@@ -7,7 +7,6 @@
 
       <!-- Inicio PHP -->
       <?php
-
         //Prepara a nossa query
         $query = $conecta->prepare("SELECT * FROM tb_livros");
         $query->execute();
@@ -16,10 +15,7 @@
         //fetchALL - é como se ele fatiando a tabela
         $resultado = $query->fetchALL(PDO::FETCH_ASSOC); //a variavel $resultado vira um array
         
-        foreach($resultado as $rows){
-
-        
-              
+        foreach($resultado as $rows){      
 
           //Cartão
           echo (" 
@@ -29,14 +25,9 @@
               </div>
             
            </div> 
-          ");   
-
-        
+          ");        
         }
-
-
       ?>
-
       <!-- Fim PHP -->
   </div>
 
