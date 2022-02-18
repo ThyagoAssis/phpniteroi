@@ -19,12 +19,9 @@
 
           //Cartão
           echo (" 
-            <div class='col-4 '>
-              <div class='card' style='width: 18rem;'>
-              <img src='$rows[imagem]' class='card-img-top' alt='...' width='20'>
-              </div>
-            
-           </div> 
+            <div class='col-3 '>          
+              <img  src='$rows[imagem]' class='corpo img_corpo'alt='...' >
+            </div> 
           ");        
         }
       ?>

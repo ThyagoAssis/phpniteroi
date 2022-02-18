@@ -10,7 +10,7 @@
     
     <title>TuxBook - Sua Livraria Digital</title>
 </head>
-<body >
+<body  >
 
     <!--- Minha NavBar / Cabeçalho-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
