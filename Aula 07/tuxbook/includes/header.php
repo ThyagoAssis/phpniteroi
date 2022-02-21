@@ -23,8 +23,34 @@
       <div class="navbar-nav me-auto mb-2 mb-lg-0  mr-auto">
        
       </div>
-      <a href="cadastro.php"><button class="btn btn-dark">Cadastrar</button></a>      
+      <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">Logar</button>    
     </div>
   </div>
-</nav>
+</nav><!--Fim NAVBAR-->
+
+
+<!--Inicio Modal-->
+<div class="modal fade " id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Logar</h5>
+        <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <form action="" >      
+        <div class="container bg-secondary modal-body form-group">
+          <input type="mail" class="form-control " placeholder="email@mail.com">
+          <input type="password" class="form-control mt-3 "  placeholder="Senha">
+        </div>
+        <div class="modal-footer ">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entrar</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+<!--Inicio Modal-->
+
     
