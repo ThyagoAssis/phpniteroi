@@ -1,20 +1,11 @@
-<!--INICIO HTML FORM LOGIN-->
-<h1>Sistema de Login</h1>
-<hr>
-<form action="" method="POST">
-    <input type="email" placeholder="email@email.com" name="email">
-    <input type="password" placeholder="Senha" name="senha">
-    <button type="submit" name="btn-logar">Logar</button>
-</form>
-<!--FINAL HTML FORM LOGIN-->
-
+  
 <!--INCIO PHP-->
 <?php
     //Verifica se o botão logar foi pressionado
     if(isset($_POST['btn-logar'])){
         
         //Conexão com o banco de dados
-        require_once("./app/scripts/conecta.php");
+        require_once("conecta.php");
 
         //Declara as variáveis
         $email = $_POST['email'];
@@ -49,8 +40,10 @@
             
             //Verificar se o usuário estar logado
             $_SESSION['login'] = true;
-            header('Location: ./includes/home.php');
+            header('Location: ../../index.php');
         }
+    }else{
+        echo "deu erro";
     }
 
 ?>

@@ -1,3 +1,13 @@
+    <?php
+        session_start();
+        if(logIn()){
+            
+            if($_SESSION['nivel'] === 1){ 
+    
+    
+    ?>
+    
+    
     <section class="container justify-content-center mt-5">
 
         <h2 class="mb-3 mt-3 text-center">Formulario para Cadastro</h2>
@@ -53,4 +63,13 @@
 
     </section>
 
+<?php
+        }else{
+            echo "area restrita";
+        }
+    }else{
+        header('Location: ../../index.php');
+    }
 
+
+?>

@@ -9,7 +9,7 @@
             >require  -  Em caso de erro ele para a execução da Aplicação
                 require_once - Inclui o arquivo uma única vez
     */
-
+    
     //Incluindo o Header
     include __DIR__ . "/includes/header.php";
 
