@@ -12,13 +12,13 @@
           <input type="mail" class="form-control " name="email" placeholder="email@mail.com">
           <input type="password" class="form-control mt-3 " name="senha" placeholder="Senha">
         </div>
-        <div class="modal-footer ">
-          <button type="submit" class="btn btn-secondary" name="btn-logar" data-bs-dismiss="modal">Entrar</button>
-        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-secondary btn-sm shadow" name="btn-logar" data-bs-dismiss="modal">Entrar</button>
       </form>
-
+      <button type="button" class="btn btn-secondary btn-sm shadow" data-bs-toggle="modal" data-bs-target="#registrarModal">Cadastre-se</button>
     </div>
   </div>
+</div>
 </div>
 <!--Fim Modal logar -->
 
@@ -59,7 +59,7 @@
 
         </div>
         <div class="modal-footer ">
-          <button type="submit" class="btn btn-secondary" name="btn-logar" data-bs-dismiss="modal">Cadastrar</button>
+          <button type="submit" class="btn btn-secondary btn-sm" name="btn-logar" data-bs-dismiss="modal">Cadastrar</button>
         </div>
       </form>
 

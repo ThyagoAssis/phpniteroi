@@ -18,10 +18,6 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Cadastrar</a></li>
               <li><a class="dropdown-item" href="#">Consultar</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
         </ul>
@@ -36,8 +32,12 @@
       <!--Início navbar Desconectado-->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav me-auto mb-2 mb-lg-0  mr-auto"></div>
-        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">Entrar</button>
-        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#registrarModal">Registre-se</button>
+        <ul class="navbar-nav">
+          <li class="nav-item  "><button class=" btn btn-secondary rounded-circle shadow bi bi-box-arrow-in-right " data-bs-toggle="modal" data-bs-target="#loginModal"></button></li>
+          <!-- <li class="nav-item ml-3"><button class="btn btn-secondary shadow rounded-circle" data-bs-toggle="modal" data-bs-target="#registrarModal">Registre-se</button></li> -->
+        </ul>
+
+
       </div>
   </div>
 
