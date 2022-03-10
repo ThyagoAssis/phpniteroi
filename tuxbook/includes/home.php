@@ -9,12 +9,14 @@
     <?php
       require __DIR__ . "../../app/scripts/consulta.php";
 
-        session_start();
+
         if (isset($_SESSION['erros'])) {
           include("./app/scripts/erros.php");
           erros($_SESSION['msgErros']);
-        }else{
-          echo "ouo";
+          sleep(10);
+          $_SESSION['erros'] = false;
+          session_destroy();
+
         }
 
         foreach($resultado as $rows){
