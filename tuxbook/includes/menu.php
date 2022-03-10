@@ -1,7 +1,7 @@
 <!--- Minha NavBar / Cabeçalho-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand" href="index.php">TUXBOOK</a>
+    <a class="navbar-brand" href="index.php"> <img src="img/logo/logo.png" alt="" class="img-fluid rounded"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,9 +36,9 @@
       <!--Início navbar Desconectado-->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav me-auto mb-2 mb-lg-0  mr-auto"></div>
-          <button class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#loginModal">Entrar</button>
-          <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#registrarModal">Registre-se</button>
-        </div>
+        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">Entrar</button>
+        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#registrarModal">Registre-se</button>
+      </div>
   </div>
 
 <?php endif; ?>

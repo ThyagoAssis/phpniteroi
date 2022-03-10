@@ -4,7 +4,7 @@
     <div class="modal-content ">
       <div class="modal-header">
         <h5 class="modal-title" id="loginModalLabel">Logar</h5>
-        <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn btn-sm bi bi-x" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
       <form action="./app/scripts/sigIn.php" method="post">
@@ -30,34 +30,34 @@
     <div class="modal-content ">
       <div class="modal-header">
         <h5 class="modal-title" id="resgistrarModalLabel">Cadastre-se</h5>
-        <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn btn-sm bi bi-x " data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
-        <form action="./app/scripts/sigIn.php" method="post">
-          <div class="container bg-secondary modal-body form-group">
+      <form action="./app/scripts/sigIn.php" method="post">
+        <div class="container bg-secondary modal-body form-group">
 
-            <div class="row mt-3">
-                <div class="col-4">
-                  <input type="text" class="form-control" name="nome" placeholder="Nome:">
-                </div>
-                <div class="col-8">
-                  <input type="text" class="form-control" name="sobrenome" placeholder="Sobrenome">
-                </div>
+          <div class="row">
+            <div class="col-4">
+              <input type="text" class="form-control" name="nome" placeholder="Nome:">
             </div>
-
-              <div class="row mt-3">
-                <div class="col-12">
-                  <input type="mail" class="form-control " name="email" placeholder="email@mail.com">
-                </div>
-              </div>
-
-            <div class="row mt-3">
-              <div class="col-12">
-                <input type="password" class="form-control  " name="senha" placeholder="Senha">
-              </div>
+            <div class="col-8">
+              <input type="text" class="form-control" name="sobrenome" placeholder="Sobrenome">
             </div>
-
           </div>
+
+          <div class="row mt-3">
+            <div class="col-12">
+              <input type="mail" class="form-control " name="email" placeholder="email@mail.com">
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-12">
+              <input type="password" class="form-control  " name="senha" placeholder="Senha">
+            </div>
+          </div>
+
+        </div>
         <div class="modal-footer ">
           <button type="submit" class="btn btn-secondary" name="btn-logar" data-bs-dismiss="modal">Cadastrar</button>
         </div>
