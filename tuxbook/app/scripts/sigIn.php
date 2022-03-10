@@ -29,9 +29,10 @@ if (isset($_POST['btn-logar'])) {
     //Verificar se tem dados na tb_user
     //count - verifica o tamnho  de um array
     if (count($users) <= 0) {
-         erros("Usuario não encontrado");
-         sleep(20);
-         header('Location: ../../index.php');
+        session_start();
+        $_SESSION['erros'] = true;
+        $_SESSION['msgErros'] = "Usuário e ou senha não encontrados";
+        header('Location: ../../index.php');
 
     } else {
         //Pega esse usuário

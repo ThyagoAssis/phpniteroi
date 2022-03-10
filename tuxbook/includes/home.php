@@ -7,8 +7,16 @@
 
     <!--Inicio PHP-->
     <?php
-        require __DIR__ . "../../app/scripts/consulta.php";
-        
+      require __DIR__ . "../../app/scripts/consulta.php";
+
+        session_start();
+        if (isset($_SESSION['erros'])) {
+          include("./app/scripts/erros.php");
+          erros($_SESSION['msgErros']);
+        }else{
+          echo "ouo";
+        }
+
         foreach($resultado as $rows){
 
           //Cartão
